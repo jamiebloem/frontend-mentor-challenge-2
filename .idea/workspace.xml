@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a014f5b-4091-40ca-b4bc-1ef4dfc0ff18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typemaster-pre-launch-landing-page/starter-code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/typemaster-pre-launch-landing-page/starter-code/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typemaster-pre-launch-landing-page/starter-code/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/typemaster-pre-launch-landing-page/starter-code/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="8a014f5b-4091-40ca-b4bc-1ef4dfc0ff18" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,12 +38,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/typemaster-pre-launch-landing-page/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/typemaster-pre-launch-landing-page/typemaster-pre-launch-landing-page/starter-code/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -63,7 +63,7 @@
       <workItem from="1633871770817" duration="11718000" />
       <workItem from="1634398989911" duration="12449000" />
       <workItem from="1634642940603" duration="18827000" />
-      <workItem from="1635070149045" duration="17209000" />
+      <workItem from="1635070149045" duration="17638000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 2px red solid;
+    /*border: 2px red solid;*/
 }
 
 :root {
@@ -110,7 +110,7 @@ button {
 }
 
 .first--image {
-    background-image: url("./assets/mobile/image-keyboard.jpg");
+    background-image: url("assets/mobile/image-keyboard.jpg");
     border-radius: 10px;
     margin-left: auto;
     margin-right: -24px;
@@ -156,7 +156,7 @@ button {
 }
 
 .keyboard-two {
-    background-image: url("./assets/mobile/image-glass-and-keyboard.jpg");
+    background-image: url("assets/mobile/image-glass-and-keyboard.jpg");
     width: 220px;
     height: 193px;
     margin: 24px 24px 0 24px;
@@ -164,7 +164,7 @@ button {
 }
 
 .keyboard-one {
-    background-image: url("./assets/mobile/image-phone-and-keyboard.jpg");
+    background-image: url("assets/mobile/image-phone-and-keyboard.jpg");
     background-color: var(--color-primary);
     background-blend-mode: multiply;
     background-size: cover;
@@ -216,7 +216,7 @@ button {
         height: 425px;
         margin-left: 0;
         transform: translateX(36px);
-        background-image: url("./assets/tablet/image-keyboard.jpg");
+        background-image: url("assets/tablet/image-keyboard.jpg");
     }
 
     .button--grey {
@@ -230,7 +230,7 @@ button {
     }
 
     .keyboard-one {
-        background-image: url("./assets/tablet/image-phone-and-keyboard.jpg");
+        background-image: url("assets/tablet/image-phone-and-keyboard.jpg");
         height: 320px;
         width: 214px;
         padding: 0;
@@ -238,7 +238,7 @@ button {
     }
 
     .keyboard-two {
-        background-image: url("./assets/tablet/image-glass-and-keyboard.jpg");
+        background-image: url("assets/tablet/image-glass-and-keyboard.jpg");
         background-size: cover;
         height: 320px;
         width: 445px;
