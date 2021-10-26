@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     border: 2px red solid;
-
 }
 
 :root {
@@ -12,61 +11,86 @@
     --color-black: hsl(220, 50%, 17%);
     --color-grey: hsl(221, 23%, 58%);
     --color-grey-light: hsl(198, 28%, 93%);
+    --padding-m: 24px;
+
 }
 
 html {
     overflow-x: hidden;
+    font-size: 16px;
 }
+
 body {
     font-family: 'Barlow', sans-serif;
-    width: 375px;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
-    font-size: 48px;
     text-transform: uppercase;
-    padding: 24px;
-    margin-top: 40px;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 h2 {
-    text-transform: uppercase;
-    font-weight: 900;
     font-size: 32px;
-    padding: 60px;
-    text-align: center;
 }
 
 h3 {
-    text-transform: uppercase;
-    font-weight: 900;
     font-size: 24px;
+}
+
+.heading-cta {
+    padding: var(--padding-m);
+    max-width: 450px;
+}
+
+.heading-cta__title {
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+.wireless-keyboard__title {
+    margin-bottom: 24px;
+    margin-top: 75px;
     text-align: center;
-    padding: 24px;
-    margin: 0 60px 0 60px;
+}
+
+.usp__title {
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .text--center {
     text-align: center;
+    color: var(--color-grey);
 }
 
-p {
+.heading-cta__intro {
     font-weight: 500;
     font-size: 16px;
     color: var(--color-grey);
-    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.cta__release {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-grey);
+    text-transform: uppercase;
+    margin-left: 24px;
 }
 
 button {
+    font-family: 'Barlow', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 8px;
     padding: 11px 14px;
-    font-weight: 500;
+    font-weight: 900;
     border: none;
 }
 
@@ -86,9 +110,13 @@ button {
 }
 
 .first--image {
+    background-image: url("./assets/mobile/image-keyboard.jpg");
     border-radius: 10px;
-    margin-left: 24px;
-    width: 100%;
+    margin-left: auto;
+    margin-right: -24px;
+    width: 373px;
+    height: 331px;
+    background-size: cover;
 }
 
 .icons {
@@ -97,7 +125,8 @@ button {
     width: 65px;
     height: 65px;
     border-radius: 10px;
-    margin: 64px 155px 48px 155px;
+    margin: 64px auto 48px auto;
+    display: block;
 }
 
 .logo {
@@ -105,7 +134,7 @@ button {
     height: 40px;
 }
 
-.heading {
+.logo-heading {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -116,17 +145,9 @@ button {
 .cta {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 24px 24px 0 24px;
-    margin-bottom: 64px;
-}
-
-.cta__release {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--color-grey);
+    margin-bottom: 40px;
 }
 
 .keyboard-images {
@@ -135,6 +156,7 @@ button {
 }
 
 .keyboard-two {
+    background-image: url("./assets/mobile/image-glass-and-keyboard.jpg");
     width: 220px;
     height: 193px;
     margin: 24px 24px 0 24px;
@@ -142,7 +164,9 @@ button {
 }
 
 .keyboard-one {
-    background: linear-gradient(0deg, hsla(22, 89%, 52%, 0.7), hsla(22, 89%, 52%, 0.7)), url("./assets/mobile/image-phone-and-keyboard.jpg");
+    background-image: url("./assets/mobile/image-phone-and-keyboard.jpg");
+    background-color: var(--color-primary);
+    background-blend-mode: multiply;
     background-size: cover;
     width: 129px;
     height: 193px;
@@ -150,11 +174,121 @@ button {
     margin: 24px 0 0 -20px;
 }
 
+.usp-icons {
+    padding: var(--padding-m);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.usp {
+    max-width: 450px;
+}
+
 .text-end {
     margin: 96px 0 50px 0;
     padding: 0;
     text-align: center;
+    color: var(--color-grey);
 }
 
+.wireless-keyboard {
+    padding: var(--padding-m);
+    max-width: 450px;
+    margin: auto;
+}
 
+@media only screen and (min-width: 768px) {
+    :root {
+        --padding-m: 40px;
+    }
+    .heading-cta {
+        width: 50%;
+    }
 
+    .logo-heading {
+        margin-bottom: 40px;
+        max-width: 768px;
+    }
+
+    .first--image {
+        height: 425px;
+        margin-left: 0;
+        transform: translateX(36px);
+        background-image: url("./assets/tablet/image-keyboard.jpg");
+    }
+
+    .button--grey {
+        top: -50px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .keyboard-one {
+        background-image: url("./assets/tablet/image-phone-and-keyboard.jpg");
+        height: 320px;
+        width: 214px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .keyboard-two {
+        background-image: url("./assets/tablet/image-glass-and-keyboard.jpg");
+        background-size: cover;
+        height: 320px;
+        width: 445px;
+        padding: 0;
+        margin: 0 0 0 24px;
+    }
+
+    .keyboard-images {
+        padding: 0 40px;
+        margin-top: 24px;
+    }
+
+    .wireless-keyboard {
+        display: flex;
+        flex-direction: row;
+        margin-top: 32px;
+        max-width: unset;
+    }
+
+    .keyboard-content {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin-left: 80px;
+    }
+
+    .wireless-keyboard__title {
+        padding: 0;
+        text-align: left;
+    }
+
+    .usp {
+        width: 281px;
+        margin-right: 60px;
+    }
+
+    .usp-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .usp__title {
+        text-align: left;
+    }
+
+    .icons {
+        margin: 64px 0 48px 0;
+    }
+
+    .text--center {
+        text-align: left;
+    }
+}
